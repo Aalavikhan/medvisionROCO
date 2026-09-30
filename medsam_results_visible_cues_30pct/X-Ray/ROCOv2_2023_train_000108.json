@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\X-Ray\\ROCOv2_2023_train_000108.png",
+  "modality": "X-Ray",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: cephalogram (head and neck X-ray). The image contains various visual markings such as arrows, circles, and labels that I must consider as potential localization cues. </step-1> <step-2> By analyzing the relative coordinates of the bounding box, I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-2> <step-3> The relative coordinates of the bounding box: (0.346, 0.517), (0.612, 0.742). </step-3> </think> <answer> 0.346,0.517,0.612,0.742</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.346,
+    0.517,
+    0.612,
+    0.742
+  ],
+  "original_pixel_box_upper_left": [
+    260,
+    174,
+    459,
+    327
+  ],
+  "expanded_pixel_box_upper_left": [
+    200,
+    128,
+    519,
+    373
+  ],
+  "image_width": 750,
+  "image_height": 676,
+  "medsam_score": 0.5690487027168274,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000108_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000108_overlay.png"
+}

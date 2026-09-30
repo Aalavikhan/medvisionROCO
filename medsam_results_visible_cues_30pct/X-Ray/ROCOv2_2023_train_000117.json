@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\X-Ray\\ROCOv2_2023_train_000117.png",
+  "modality": "X-Ray",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.146,0.087,0.375,0.256</answer> <think> <answer> 0.146,0.087,0.375,0.256</answer> <answer> 0.302,0.198,0.440,0.316</answer> <answer> 0.302,0.198,0.440,0.316</answer> <answer> 0.404,0.286,0.505,0.387</answer> <answer> 0.404,0.286,0.505,0.387</answer> <answer> 0.484,0.356,0.582,0.450</answer> <answer> 0.484,0.356,0.582,0.450</answer> <answer> 0.551,0.404,0.626,0.486</answer> <answer> 0.551,0.404,0.626,0.486</answer> <answer> 0.606,0.505,0.680,0.575</answer> <answer> 0.606,0.505,0.680,0.575</answer> <answer> 0.656,0.616,0.722,0.685</answer> <answer> 0.656,0.616,0.722,0.685</answer> <answer> 0.705,0.718,0.770,0.782</answer> <answer> 0.705,0.718,0.770,0.782</answer> </think> <answer> 0.146,0.087,0.375,0.256</answer> <answer> 0.302,0.198,0.440,0.316</answer> <answer> 0.404,0.286,0.505,0.387</answer> <answer> 0.484,0.356,0.582,0.450</answer> <answer> 0.551,0.404,0.626,0.486</answer> <answer> 0.606,0.505,0.680,0.575</answer> <answer> 0.656,0.616,0.722,0.685</answer> <answer> 0.705,0.718,0.770,0.782</answer> <answer> 0.146,0.087,0.375,0.256</answer> <answer> 0.302,0.198,0.440,0.316</answer> <answer> 0.404,0.286,0.505,0.387</answer> <answer> 0.484,0.356,0.582,0.450</answer> <answer> 0.551,0.404,0.626,0.486</answer> <answer> 0.606,0.505,0.680,0.575</answer> <answer> 0.656,0.616,0.722,0.685</answer> <answer> 0.705,0.718,0.770,0.782</answer> <answer> 0.146,0.087,0.375,0.256</answer> <answer> 0.302,0.198,0.440,0.3",
+  "medvision_normalized_box_lower_left": [
+    0.146,
+    0.087,
+    0.375,
+    0.256
+  ],
+  "original_pixel_box_upper_left": [
+    110,
+    579,
+    281,
+    710
+  ],
+  "expanded_pixel_box_upper_left": [
+    59,
+    540,
+    332,
+    749
+  ],
+  "image_width": 750,
+  "image_height": 778,
+  "medsam_score": 0.6102882623672485,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000117_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000117_overlay.png"
+}

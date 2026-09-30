@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\X-Ray\\ROCOv2_2023_train_000104.png",
+  "modality": "X-Ray",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.656, 0.271, 0.746, 0.380</answer> <think> <answer> 0.656, 0.271, 0.746, 0.380</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: cephalogram (head and neck X-ray). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> <div> <img> <div> <p> I see that the relative coordinates of the bounding box: (0.656, 0.271), (0.746, 0.380). </p> </div> </img> </div> </think> <answer> 0.656, 0.271, 0.746, 0.380</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: cephalogram (head and neck X-ray). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> <div> <img> <div> <p> I see that the relative coordinates of the bounding box: (0.656, 0.271), (0.746, 0.380). </p> </div> </img> </div> </think> <answer> 0.656, 0.271, 0.746, 0.380</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: cephalogram (head and neck X-ray). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> <div> <img> <div> <p> I see that the relative coordinates of the bounding box: (0.656, 0.271), (0.746, 0.380). </p> </div> </img> </div> </div> </think> <answer> 0.656, 0.271, 0.746, 0.380</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: cephalogram (head and neck X-ray). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> <div> <img> <div> <p> I see that the relative coordinates of the bounding box: (0.656, 0.271), (0.746, 0.380). </p> </div> </img> </div> </div> </think> <answer> 0.656, 0.271, 0.746, 0.380</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: cephalogram (head and neck X-ray). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> <div> <img> <div> <p> I see that the relative coordinates of the bounding box: (0.656, 0.271), (0.746, ",
+  "medvision_normalized_box_lower_left": [
+    0.656,
+    0.271,
+    0.746,
+    0.38
+  ],
+  "original_pixel_box_upper_left": [
+    445,
+    516,
+    507,
+    607
+  ],
+  "expanded_pixel_box_upper_left": [
+    426,
+    489,
+    526,
+    634
+  ],
+  "image_width": 679,
+  "image_height": 833,
+  "medsam_score": 0.5505489110946655,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000104_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000104_overlay.png"
+}

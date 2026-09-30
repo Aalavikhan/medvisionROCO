@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\X-Ray\\ROCOv2_2023_train_000077.png",
+  "modality": "X-Ray",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.456, 0.287, 0.646, 0.469 </answer> <think> <answer> 0.456, 0.287, 0.646, 0.469</answer> <meta-argument> I need to identify and output the most clinically relevant abnormal region from the input medical image: knee magnetic resonance imaging (MRI) scan. The reasoning steps are: Step 1: I understand that I must look for visual markings in the image that are not just annotations but also indicate an abnormal finding. I see an arrow pointing to a specific region in the image. </step1> <step2>: Next, I must determine the underlying abnormality that the arrow is indicating. The relative coordinates of the bounding box: (0.456, 0.287), (0.646, 0.469). </step2> <step3>: I now output the relative coordinates of the bounding box in the required format: 0.456, 0.287, 0.646, 0.469. </step3> </think> <answer> 0.456, 0.287, 0.646, 0.469</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.456,
+    0.287,
+    0.646,
+    0.469
+  ],
+  "original_pixel_box_upper_left": [
+    365,
+    410,
+    517,
+    550
+  ],
+  "expanded_pixel_box_upper_left": [
+    319,
+    368,
+    563,
+    592
+  ],
+  "image_width": 800,
+  "image_height": 772,
+  "medsam_score": 0.6408053636550903,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000077_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000077_overlay.png"
+}

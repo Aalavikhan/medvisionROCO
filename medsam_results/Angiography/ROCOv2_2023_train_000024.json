@@ -1,0 +1,22 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000024.png",
+  "medvision_prompt": "the most clinically relevant abnormal region",
+  "medvision_raw_output": "<think> <step-1-reasoning> I need to identify the relative coordinates of the bounding box of most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1-reasoning> <step-1-answer> The relative coordinates of the bounding box: (0.492, 0.436), (0.587, 0.500). </step-1-answer> </think> <answer> 0.492,0.436,0.587,0.500</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.492,
+    0.436,
+    0.587,
+    0.5
+  ],
+  "pixel_box_upper_left": [
+    349,
+    354,
+    416,
+    400
+  ],
+  "image_width": 709,
+  "image_height": 709,
+  "medsam_score": 0.4721551239490509,
+  "mask_path": "D:\\medvision-roco\\medsam_results\\Angiography\\ROCOv2_2023_train_000024_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results\\Angiography\\ROCOv2_2023_train_000024_overlay.png"
+}

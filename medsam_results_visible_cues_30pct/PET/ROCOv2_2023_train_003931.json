@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_003931.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: knee magnetic resonance imaging (MRI) scan. The possible abnormal regions are: medial tibial cartilage, lateral tibial cartilage, medial tibial cartilage, lateral tibial cartilage, medial tibial cartilage, lateral tibial cartilage, medial tibial cartilage, lateral tibial cartilage. </step-1> <step-2> I understand that the task is to return the relative coordinates of the bounding box of the most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I also need to be careful not to include surrounding normal anatomy in the bounding box. </step-2> <step-3> I have determined the relative coordinates of the bounding box: (0.526, 0.375), (0.615, 0.481). </step-3> </think> <answer> 0.526,0.375,0.615,0.481</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.526,
+    0.375,
+    0.615,
+    0.481
+  ],
+  "original_pixel_box_upper_left": [
+    347,
+    306,
+    406,
+    368
+  ],
+  "expanded_pixel_box_upper_left": [
+    329,
+    287,
+    424,
+    387
+  ],
+  "image_width": 660,
+  "image_height": 589,
+  "medsam_score": 0.5089988112449646,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_003931_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_003931_overlay.png"
+}

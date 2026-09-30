@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\X-Ray\\ROCOv2_2023_train_000034.png",
+  "modality": "X-Ray",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify any visually marked abnormalities in the input medical image: abdominal CT scan. The possible markings are: - Arrows - Circles - Pointers - Labels - Markers - Text. </step-1> <step-2> I understand that the task is to return the coordinates of the bounding box of the most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I must be careful not to return the coordinates of any visual markings instead of the actual abnormal region. </step-2> <step-3> I have identified the relative coordinates of the bounding box: (0.640, 0.350), (0.721, 0.449). </step-3> </think> <answer> 0.640,0.350,0.721,0.449</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.64,
+    0.35,
+    0.721,
+    0.449
+  ],
+  "original_pixel_box_upper_left": [
+    442,
+    321,
+    497,
+    379
+  ],
+  "expanded_pixel_box_upper_left": [
+    426,
+    304,
+    514,
+    396
+  ],
+  "image_width": 690,
+  "image_height": 583,
+  "medsam_score": 0.4280589520931244,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000034_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000034_overlay.png"
+}

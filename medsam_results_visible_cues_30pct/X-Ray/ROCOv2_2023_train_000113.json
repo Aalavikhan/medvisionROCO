@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\X-Ray\\ROCOv2_2023_train_000113.png",
+  "modality": "X-Ray",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to inspect the image for any visible markings that indicate an abnormal finding. The possible markings are: arrows, circles, pointers, labels, markers, text. </step-1> <step-2> I understand that the reasoning process must be enclosed within <think> </think> and the final answer must be four decimal numbers separated by commas without any units or additional text. The first two numbers are the coordinates of the lower-left corner and the last two numbers are the coordinates of the upper-right corner of the bounding box. I must use relative coordinates in image space, where the origin is at the lower-left corner of the image. </step-2> <step-3> I have determined the relative coordinates of the bounding box: (0.546, 0.687), (0.600, 0.750). </step-3> </think> <answer> 0.546,0.687,0.600,0.750</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.546,
+    0.687,
+    0.6,
+    0.75
+  ],
+  "original_pixel_box_upper_left": [
+    328,
+    202,
+    360,
+    253
+  ],
+  "expanded_pixel_box_upper_left": [
+    318,
+    187,
+    370,
+    268
+  ],
+  "image_width": 600,
+  "image_height": 809,
+  "medsam_score": 0.48187050223350525,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000113_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000113_overlay.png"
+}

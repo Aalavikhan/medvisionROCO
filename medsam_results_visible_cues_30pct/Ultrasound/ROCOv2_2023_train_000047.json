@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Ultrasound\\ROCOv2_2023_train_000047.png",
+  "modality": "Ultrasound",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal computed tomography (CT) scan. The reasoning steps are: 1. Identify the relative coordinates of the bounding box of the liver cancer, which are (0.682, 0.451), (0.729, 0.521). 2. Identify the relative coordinates of the bounding box of the liver cancer, which are (0.682, 0.451), (0.729, 0.521). </step-1> <step-2> The most clinically relevant abnormal region is the liver cancer, with relative coordinates (0.682, 0.451), (0.729, 0.521). </step-2> <step-3> I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-3> </think> <answer> 0.682,0.451,0.729,0.521</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.682,
+    0.451,
+    0.729,
+    0.521
+  ],
+  "original_pixel_box_upper_left": [
+    546,
+    267,
+    583,
+    306
+  ],
+  "expanded_pixel_box_upper_left": [
+    535,
+    255,
+    594,
+    318
+  ],
+  "image_width": 800,
+  "image_height": 558,
+  "medsam_score": 0.48613157868385315,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000047_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000047_overlay.png"
+}

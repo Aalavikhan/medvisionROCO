@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\CT\\ROCOv2_2023_train_000003.png",
+  "modality": "CT",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The possible abnormal regions are: aorta, postcava (inferior vena cava), right atrium, left atrium, left ventricle, aorta, postcava (inferior vena cava), right atrium, left atrium, left ventricle. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I must now determine the underlying abnormality indicated by the marking. The reasoning process: I see that the relative coordinates of the bounding box: (0.395, 0.584), (0.486, 0.659). I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-2> <step-3> I need to output the relative coordinates of a bounding box around the underlying abnormality. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I get the reasoning steps result: the relative coordinates of the bounding box: (0.395, 0.584), (0.486, 0.659). </step-3> </think> <answer> 0.395,0.584,0.486,0.659</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.395,
+    0.584,
+    0.486,
+    0.659
+  ],
+  "original_pixel_box_upper_left": [
+    141,
+    90,
+    174,
+    109
+  ],
+  "expanded_pixel_box_upper_left": [
+    131,
+    84,
+    184,
+    115
+  ],
+  "image_width": 358,
+  "image_height": 263,
+  "medsam_score": 0.42274484038352966,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\CT\\ROCOv2_2023_train_000003_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\CT\\ROCOv2_2023_train_000003_overlay.png"
+}

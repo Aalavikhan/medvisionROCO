@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Ultrasound\\ROCOv2_2023_train_000299.png",
+  "modality": "Ultrasound",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.350, 0.179, 0.646, 0.428</answer> <think> <answer> 0.350, 0.179, 0.646, 0.428</answer> <step-1-reasoning> I need to identify and localize the most clinically relevant abnormal region in the input medical image. The reasoning steps are: 1. Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2. Determine the underlying abnormality indicated by the marking rather than the marking itself. 3. Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1-reasoning> <step-1-answer> I have inspected the image and found the relative coordinates of the bounding box: (0.350, 0.179), (0.646, 0.428). </step-1-answer> <step-2-reasoning> Next, I need to determine the underlying abnormality indicated by the relative coordinates of the bounding box: (0.350, 0.179), (0.646, 0.428). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-2-reasoning> <step-2-answer> The underlying abnormality: (0.350, 0.179), (0.646, 0.428). </step-2-answer> <step-3-reasoning> I now need to determine the relative coordinates of a bounding box around the underlying abnormality: (0.350, 0.179), (0.646, 0.428). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-3-reasoning> <step-3-answer> The bounding box: (0.350, 0.179), (0.646, 0.428). </step-3-answer> </think> <answer> 0.350,0.179,0.646,0.428</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.35,
+    0.179,
+    0.646,
+    0.428
+  ],
+  "original_pixel_box_upper_left": [
+    210,
+    258,
+    388,
+    370
+  ],
+  "expanded_pixel_box_upper_left": [
+    157,
+    224,
+    441,
+    404
+  ],
+  "image_width": 600,
+  "image_height": 451,
+  "medsam_score": 0.5773947834968567,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000299_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000299_overlay.png"
+}

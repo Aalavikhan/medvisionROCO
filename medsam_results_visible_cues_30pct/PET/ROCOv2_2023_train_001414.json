@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_001414.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify any visual markings in the image that are not just annotations but are actually part of the image. These could be arrows, circles, pointers, labels, markers, or text. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> Next, I must determine which of the identified markings is indicating an abnormal finding. </step-2> <step-3> I now need to output the relative coordinates of the bounding box of the identified abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-3> </think> <answer> 0.495, 0.160, 0.746, 0.408</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.495,
+    0.16,
+    0.746,
+    0.408
+  ],
+  "original_pixel_box_upper_left": [
+    351,
+    368,
+    529,
+    522
+  ],
+  "expanded_pixel_box_upper_left": [
+    298,
+    322,
+    582,
+    568
+  ],
+  "image_width": 709,
+  "image_height": 621,
+  "medsam_score": 0.5978688597679138,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_001414_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_001414_overlay.png"
+}

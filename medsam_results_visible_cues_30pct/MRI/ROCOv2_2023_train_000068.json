@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\MRI\\ROCOv2_2023_train_000068.png",
+  "modality": "MRI",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: gadolinium-enhanced T1-weighted brain magnetic resonance imaging (MRI) scan. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I have determined that the relative coordinates of the bounding box of the surrounding non-enhancing brain tumor core of resection cavity are: (0.307, 0.280), (0.394, 0.374). </step-2> <step-3> The relative coordinates of the bounding box: (0.252, 0.264), (0.348, 0.346). </step-3> </think> <answer> 0.252,0.264,0.348,0.346</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.252,
+    0.264,
+    0.348,
+    0.346
+  ],
+  "original_pixel_box_upper_left": [
+    189,
+    733,
+    261,
+    825
+  ],
+  "expanded_pixel_box_upper_left": [
+    167,
+    705,
+    283,
+    853
+  ],
+  "image_width": 750,
+  "image_height": 1121,
+  "medsam_score": 0.5302268862724304,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000068_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000068_overlay.png"
+}

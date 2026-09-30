@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\CT\\ROCOv2_2023_train_000008.png",
+  "modality": "CT",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: cephalogram (head and neck X-ray). The potential abnormal regions are: subspinale, supramentale, menton, gonion, nasion, pogonion, subspinale, supramentale. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I must now determine the underlying abnormality indicated by the marking. The relative coordinates of the bounding box: (0.461, 0.250), (0.680, 0.419). </step-2> <step-3> I need to output the relative coordinates of the bounding box of the most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-3> </think> <answer> 0.461,0.250,0.680,0.419</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.461,
+    0.25,
+    0.68,
+    0.419
+  ],
+  "original_pixel_box_upper_left": [
+    310,
+    452,
+    457,
+    584
+  ],
+  "expanded_pixel_box_upper_left": [
+    266,
+    412,
+    501,
+    624
+  ],
+  "image_width": 672,
+  "image_height": 778,
+  "medsam_score": 0.5366113781929016,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\CT\\ROCOv2_2023_train_000008_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\CT\\ROCOv2_2023_train_000008_overlay.png"
+}

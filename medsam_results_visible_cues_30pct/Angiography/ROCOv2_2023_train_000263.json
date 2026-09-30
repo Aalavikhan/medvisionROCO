@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000263.png",
+  "modality": "Angiography",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.341, 0.254, 0.471, 0.418 </answer> <think> <answer> 0.341, 0.254, 0.471, 0.418 </answer> <meta-argument> I need to identify and output the most clinically relevant abnormal region from the input medical image: corticomedullary-phase computed tomography (CT) scan. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </meta-argument> <think> <answer> 0.341, 0.254, 0.471, 0.418 </answer> <think> <answer> 0.341, 0.254, 0.471, 0.418 </answer> <meta-argument> I need to identify and output the most clinically relevant abnormal region from the input medical image: corticomedullary-phase computed tomography (CT) scan. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </meta-argument> </think> <answer> 0.341, 0.254, 0.471, 0.418</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.341,
+    0.254,
+    0.471,
+    0.418
+  ],
+  "original_pixel_box_upper_left": [
+    171,
+    316,
+    236,
+    405
+  ],
+  "expanded_pixel_box_upper_left": [
+    152,
+    289,
+    256,
+    432
+  ],
+  "image_width": 502,
+  "image_height": 543,
+  "medsam_score": 0.6412175297737122,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000263_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000263_overlay.png"
+}

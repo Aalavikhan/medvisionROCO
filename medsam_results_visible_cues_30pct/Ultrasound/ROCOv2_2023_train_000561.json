@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Ultrasound\\ROCOv2_2023_train_000561.png",
+  "modality": "Ultrasound",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> <img src=\"https://i.imgur.com/7qyfFVH.png\" /> </img> <p>Inspecting the image for visible markings: </p> <ul> <li>There are no visible markings in the image.</li> </ul> </step-1> <step-2> <p>Determining the underlying abnormality: </p> <ul> <li>The relative coordinates of the bounding box: (0.382, 0.326), (0.754, 0.579). </li> </ul> </step-2> <step-3> <p>Determining the relative coordinates of the bounding box: </p> <ul> <li>Relative coordinates: (0.382, 0.326), (0.754, 0.579). </li> </ul> </think> <answer> 0.382,0.326,0.754,0.579</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.382,
+    0.326,
+    0.754,
+    0.579
+  ],
+  "original_pixel_box_upper_left": [
+    242,
+    331,
+    477,
+    530
+  ],
+  "expanded_pixel_box_upper_left": [
+    172,
+    271,
+    548,
+    590
+  ],
+  "image_width": 633,
+  "image_height": 786,
+  "medsam_score": 0.5739501118659973,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000561_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000561_overlay.png"
+}

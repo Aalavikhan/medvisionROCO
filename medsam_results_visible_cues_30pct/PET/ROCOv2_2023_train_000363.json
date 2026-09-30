@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_000363.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.546, 0.371, 0.709, 0.558</answer> <think> <answer> 0.546, 0.371, 0.709, 0.558</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.546, 0.371, 0.709, 0.558</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.546, 0.371, 0.709, 0.558</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.546, 0.371, 0.709, 0.558</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.546, 0.371, 0.709, 0.558</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.546, 0.371, 0.709, 0.558</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an",
+  "medvision_normalized_box_lower_left": [
+    0.546,
+    0.371,
+    0.709,
+    0.558
+  ],
+  "original_pixel_box_upper_left": [
+    413,
+    334,
+    536,
+    476
+  ],
+  "expanded_pixel_box_upper_left": [
+    376,
+    291,
+    573,
+    519
+  ],
+  "image_width": 756,
+  "image_height": 756,
+  "medsam_score": 0.5653605461120605,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_000363_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_000363_overlay.png"
+}

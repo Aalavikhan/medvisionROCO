@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\X-Ray\\ROCOv2_2023_train_000091.png",
+  "modality": "X-Ray",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.478,0.356,0.531,0.426</answer> <think> <answer> 0.478,0.356,0.531,0.426</answer> <meta-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: Step 1: I understand that I must look for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding in the image. I see that the relative coordinates of the bounding box: (0.478,0.356), (0.531,0.426). </meta-reasoning> <answer> 0.478,0.356,0.531,0.426</answer> <think> <answer> 0.478,0.356,0.531,0.426</answer> <meta-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: Step 1: I understand that I must look for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding in the image. I see that the relative coordinates of the bounding box: (0.478,0.356), (0.531,0.426). </meta-reasoning> <answer> 0.478,0.356,0.531,0.426</answer> <think> <answer> 0.478,0.356,0.531,0.426</answer> <meta-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: Step 1: I understand that I must look for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding in the image. I see that the relative coordinates of the bounding box: (0.478,0.356), (0.531,0.426). </meta-reasoning> <answer> 0.478,0.356,0.531,0.426</answer> <think> <answer> 0.478,0.356,0.531,0.426</answer> <meta-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: Step 1: I understand that I must look for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding in the image. I see that the relative coordinates of the bounding box: (0.478,0.356), (0.531,0.426). </meta-reasoning> <answer> 0.478,0.356,0.531,0.426</answer> <think> <answer> 0.478,0.356,0.531,0.426</answer> <meta-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: Step 1: I understand that I must look for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding in the image. I see that the relative coordinates of the bounding box: (0.478,0.356), (0.531,0.426). </meta-reasoning> <answer> 0.478,0.356,0.531,0.426</answer> <think> <answer> 0.478,0.356,0.531,0.426</answer> <meta-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: Step 1: I understand that I must look for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding in the image. I see that the relative coordinates of the bounding box: (0.478,0.356), (0",
+  "medvision_normalized_box_lower_left": [
+    0.478,
+    0.356,
+    0.531,
+    0.426
+  ],
+  "original_pixel_box_upper_left": [
+    358,
+    432,
+    398,
+    484
+  ],
+  "expanded_pixel_box_upper_left": [
+    346,
+    416,
+    410,
+    500
+  ],
+  "image_width": 750,
+  "image_height": 752,
+  "medsam_score": 0.5189185738563538,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000091_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000091_overlay.png"
+}

@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000027.png",
+  "modality": "Angiography",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.450, 0.296, 0.600, 0.427</answer> <think> <answer> 0.450, 0.296, 0.600, 0.427</answer> <meta-argument> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The reasoning steps are: 1. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. 2. I look for visible markings that are genuinely part of the image, such as arrows, circles, pointers, labels, markers, or text. 3. I determine the underlying abnormality indicated by the marking, which is a postcava (inferior vena cava). 4. I output the relative coordinates of the bounding box of the postcava: (0.502, 0.386), (0.556, 0.450). </think> <answer> 0.502, 0.386, 0.556, 0.450</answer> <meta-argument> I must return the reasoning process and final answer within <think> </think> tags. The reasoning process involves identifying and outputting the most clinically relevant abnormal region from the input medical image: abdominal CT scan. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. I look for visible markings that are genuinely part of the image, such as arrows, circles, pointers, labels, markers, or text. I determine the underlying abnormality indicated by the marking, which is a postcava (inferior vena cava). I output the relative coordinates of the bounding box of the postcava: (0.502, 0.386), (0.556, 0.450). </meta-argument> <answer> 0.502, 0.386, 0.556, 0.450</answer> <think> <answer> 0.450, 0.296, 0.600, 0.427</answer> <answer> 0.502, 0.386, 0.556, 0.450</answer> <answer> 0.450, 0.296, 0.600, 0.427</answer> <answer> 0.502, 0.386, 0.556, 0.450</answer> <think> <answer> 0.450, 0.296, 0.600, 0.427</answer> <answer> 0.502, 0.386, 0.556, 0.450</answer> <answer> 0.450, 0.296, 0.600, 0.427</answer> <answer> 0.502, 0.386, 0.556, 0.450</answer> <think> <answer> 0.450, 0.296, 0.600, 0.427</answer> <answer> 0.502, 0.386, 0.556, 0.450</answer> <answer> 0.450, 0.296, 0.600, 0.427</answer> <answer> 0.502, 0.386, 0.556, 0.450</answer> <think> <answer> 0.450, 0.296, 0.600, 0.427</answer> <answer> 0.502, 0.386, 0.556, 0.450</answer> <answer> 0.450, 0.296, 0.600, 0.427</answer> <answer> 0.502, 0.386, 0.556, 0.450</answer> <think> <answer> 0.450,",
+  "medvision_normalized_box_lower_left": [
+    0.45,
+    0.296,
+    0.6,
+    0.427
+  ],
+  "original_pixel_box_upper_left": [
+    360,
+    399,
+    480,
+    490
+  ],
+  "expanded_pixel_box_upper_left": [
+    324,
+    372,
+    516,
+    517
+  ],
+  "image_width": 800,
+  "image_height": 696,
+  "medsam_score": 0.4445197284221649,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000027_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000027_overlay.png"
+}

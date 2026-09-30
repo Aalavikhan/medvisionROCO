@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Ultrasound\\ROCOv2_2023_train_000022.png",
+  "modality": "Ultrasound",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the relative coordinates of the bounding box of most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I understand that the relative coordinates of a bounding box must be written as (x, y), where x is the relative position in width and y is the relative position in height. I need to identify the relative coordinates of the bounding box of most clinically relevant abnormal region. </step-2> <step-3> I have identified the relative coordinates of the bounding box: (0.620, 0.354), (0.750, 0.451). </step-3> </think> <answer> 0.620,0.354,0.750,0.451</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.62,
+    0.354,
+    0.75,
+    0.451
+  ],
+  "original_pixel_box_upper_left": [
+    987,
+    471,
+    1194,
+    554
+  ],
+  "expanded_pixel_box_upper_left": [
+    925,
+    446,
+    1256,
+    579
+  ],
+  "image_width": 1592,
+  "image_height": 858,
+  "medsam_score": 0.5512906908988953,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000022_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000022_overlay.png"
+}

@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\X-Ray\\ROCOv2_2023_train_000075.png",
+  "modality": "X-Ray",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.301, 0.156, 0.701, 0.480 </answer> <think> <answer> 0.301, 0.156, 0.701, 0.480 </answer> <style> </style> <script> </script> <meta> </meta> <title> </title> <footer> </footer> <header> </header> <nav> </nav> <section> </section> <article> </article> <aside> </aside> <dialog> </dialog> <output> </output> <mark> </mark> <var> </var> <del> </del> <ins> </ins> <map> </map> <meter> </meter> <progress> </progress> <summary> </summary> <time> </time> <caption> </caption> <label> </label> <address> </address> <pre> </pre> <code> </code> <listing> </listing> <q> </q> <figure> </figure> <acronym> </acronym> <initials> </initials> <line> </line> <strikethrough> </strikethrough> <underline> </underline> <ins> </ins> <mark> </mark> <var> </var> <del> </del> <ins> </ins> <map> </map> <meter> </meter> <progress> </progress> <summary> </summary> <time> </time> <caption> </caption> <label> </label> <address> </address> <pre> </pre> <code> </code> <listing> </listing> <q> </q> <figure> </figure> <acronym> </acronym> <initials> </initials> <line> </line> <strikethrough> </strikethrough> <underline> </underline> <mark> </mark> <var> </var> <del> </del> <ins> </ins> <map> </map> <meter> </meter> <progress> </progress> <summary> </summary> <time> </time> <caption> </caption> <label> </label> <address> </address> <pre> </pre> <code> </code> <listing> </listing> <q> </q> <figure> </figure> <acronym> </acronym> <initials> </initials> <line> </line> <strikethrough> </strikethrough> <underline> </underline> <mark> </mark> <var> </var> <del> </del> <ins> </ins> <map> </map> <meter> </meter> <progress> </progress> <summary> </summary> <time> </time> <caption> </caption> <label> </label> <address> </address> <pre> </pre> <code> </code> <listing> </listing> <q> </q> <figure> </figure> <acronym> </acronym> <initials> </initials> <line> </line> <strikethrough> </strikethrough> <underline> </underline> <mark> </mark> <var> </var> <del> </del> <ins> </ins> <map> </map> <meter> </meter> <progress> </progress> <summary> </summary> <time> </time> <caption> </caption> <label> </label> <address> </address> <pre> </pre> <code> </code> <listing> </listing> <q> </q> <figure> </figure> <acronym> </acronym> <initials> </initials> <line> </line> <strikethrough> </strikethrough> <underline> </underline> <mark> </mark> <var> </var> <del> </del> <ins> </ins> <map> </map> <meter> </meter> <progress> </progress> <summary> </summary> <time> </time> <caption> </caption> <label> </label> <address> </address> <pre> </pre> <code> </code> <listing> </listing> <q> </q> <figure> </figure> <acronym> </acronym> <initials> </initials> <line> </line> <strikethrough> </strikethrough> <underline> </underline> <mark> </mark> <var> </var> <del> </del> <ins> </",
+  "medvision_normalized_box_lower_left": [
+    0.301,
+    0.156,
+    0.701,
+    0.48
+  ],
+  "original_pixel_box_upper_left": [
+    241,
+    438,
+    561,
+    711
+  ],
+  "expanded_pixel_box_upper_left": [
+    145,
+    356,
+    657,
+    793
+  ],
+  "image_width": 800,
+  "image_height": 842,
+  "medsam_score": 0.5214434266090393,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000075_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\X-Ray\\ROCOv2_2023_train_000075_overlay.png"
+}

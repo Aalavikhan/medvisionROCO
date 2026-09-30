@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\MRI\\ROCOv2_2023_train_000172.png",
+  "modality": "MRI",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the relative coordinates of the bounding box of the most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I understand that the relative coordinates of a bounding box must be written as (x, y), where x is the relative position in width and y is the relative position in height. I need to identify the relative coordinates of the bounding box of the most clinically relevant abnormal region. </step-2> <step-3> I have identified the relative coordinates of the bounding box: (0.526, 0.271), (0.708, 0.442). </step-3> </think> <answer> 0.526,0.271,0.708,0.442</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.526,
+    0.271,
+    0.708,
+    0.442
+  ],
+  "original_pixel_box_upper_left": [
+    394,
+    338,
+    531,
+    441
+  ],
+  "expanded_pixel_box_upper_left": [
+    353,
+    307,
+    572,
+    472
+  ],
+  "image_width": 750,
+  "image_height": 605,
+  "medsam_score": 0.6127464175224304,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000172_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000172_overlay.png"
+}

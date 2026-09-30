@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000457.png",
+  "modality": "Angiography",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.461,0.159,0.627,0.408</answer> <think> <answer> 0.461,0.159,0.627,0.408</answer> <step-1-reasoning> I need to identify and localize the most clinically relevant abnormal region in the input medical image: kidney contrast computed tomography (CT) scan. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. I carefully inspect the image for any visible markings that are genuinely part of the image, such as arrows, circles, pointers, labels, markers, or text. </step-1-reasoning> <step-1-answer> The visible markings in the image: </step-1-answer> <step-2-reasoning> Next, I must determine the underlying abnormality indicated by the markings. The relative coordinates of the bounding box: (0.461,0.159), (0.627,0.408). </step-2-reasoning> <step-2-answer> The underlying abnormality: kidney contrast computed tomography (CT) scan. </step-2-answer> <step-3-reasoning> I now need to determine the relative coordinates of a bounding box around the underlying abnormality. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-3-reasoning> <step-3-answer> The relative coordinates of the bounding box: (0.461,0.159), (0.627,0.408). </step-3-answer> </think> <answer> 0.461,0.159,0.627,0.408</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.461,
+    0.159,
+    0.627,
+    0.408
+  ],
+  "original_pixel_box_upper_left": [
+    277,
+    336,
+    376,
+    478
+  ],
+  "expanded_pixel_box_upper_left": [
+    247,
+    293,
+    406,
+    521
+  ],
+  "image_width": 600,
+  "image_height": 568,
+  "medsam_score": 0.5078890323638916,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000457_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000457_overlay.png"
+}

@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\MRI\\ROCOv2_2023_train_000121.png",
+  "modality": "MRI",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.500,0.146,0.641,0.328</answer> <think> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</answer> <answer> 0.500,0.146,0.641,0.328</",
+  "medvision_normalized_box_lower_left": [
+    0.5,
+    0.146,
+    0.641,
+    0.328
+  ],
+  "original_pixel_box_upper_left": [
+    300,
+    311,
+    385,
+    395
+  ],
+  "expanded_pixel_box_upper_left": [
+    274,
+    286,
+    410,
+    420
+  ],
+  "image_width": 600,
+  "image_height": 463,
+  "medsam_score": 0.5934545397758484,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000121_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000121_overlay.png"
+}

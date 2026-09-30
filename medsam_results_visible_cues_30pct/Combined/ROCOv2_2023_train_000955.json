@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Combined\\ROCOv2_2023_train_000955.png",
+  "modality": "Combined",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The possible abnormal regions are: aorta, postcava (inferior vena cava), right internal carotid arterr, left internal carotid arterr, right subclavian arterr, left subclavian arterr, right middle cerebral artery, left middle cerebral artery, right anterior cerebral artery, left anterior cerebral artery, right posterior communicating artery, left posterior communicating artery, right internal carotid arterr, left internal carotid arterr, right subclavian arterr, left subclavian arterr, right middle cerebral artery, left middle cerebral artery, right anterior cerebral artery, left anterior cerebral artery, right posterior communicating artery, left posterior communicating artery. </step-1> <step-2> I understand that the reasoning process must be enclosed within <think> </think> and the final answer must be four decimal numbers separated by commas without any units or additional text. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I need to identify the relative coordinates of the bounding box of the aorta. The relative coordinates of the bounding box: (0.594, 0.467), (0.661, 0.528). </step-2> <step-3> I now output the relative coordinates of the bounding box of the aorta. The relative coordinates: (0.594, 0.467), (0.661, 0.528). </step-3> </think> <answer> 0.594,0.467,0.661,0.528</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.594,
+    0.467,
+    0.661,
+    0.528
+  ],
+  "original_pixel_box_upper_left": [
+    406,
+    235,
+    451,
+    265
+  ],
+  "expanded_pixel_box_upper_left": [
+    392,
+    226,
+    464,
+    274
+  ],
+  "image_width": 683,
+  "image_height": 497,
+  "medsam_score": 0.41490429639816284,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Combined\\ROCOv2_2023_train_000955_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Combined\\ROCOv2_2023_train_000955_overlay.png"
+}

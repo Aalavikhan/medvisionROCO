@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Combined\\ROCOv2_2023_train_000680.png",
+  "modality": "Combined",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.500,0.406,0.604,0.516</answer> <think> <answer> 0.500,0.406,0.604,0.516</answer> <step-1> <img> <div> <img> <div> <p> <span style=\"color: blue\">Task:</span> Given the input medical image: abdominal computed tomography (CT) scan, return the coordinates of the bounding box of the bladder.</p> <div> <img> <div> <p> <span style=\"color: blue\">Additional information:</span> The origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </div> </img> </think> <answer> 0.500,0.406,0.604,0.516</answer> <step-1> <img> <div> <img> <div> <p> <span style=\"color: blue\">Task:</span> Given the input medical image: abdominal computed tomography (CT) scan, return the coordinates of the bounding box of the bladder.</p> <div> <img> <div> <p> <span style=\"color: blue\">Additional information:</span> The origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </div> </img> </think> <answer> 0.500,0.406,0.604,0.516</answer> <step-1> <img> <div> <img> <div> <p> <span style=\"color: blue\">Task:</span> Given the input medical image: abdominal computed tomography (CT) scan, return the coordinates of the bounding box of the bladder.</p> <div> <img> <div> <p> <span style=\"color: blue\">Additional information:</span> The origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </div> </img> </think> <answer> 0.500,0.406,0.604,0.516</answer> <step-1> <img> <div> <img> <div> <p> <span style=\"color: blue\">Task:</span> Given the input medical image: abdominal computed tomography (CT) scan, return the coordinates of the bounding box of the bladder.</p> <div> <img> <div> <p> <span style=\"color: blue\">Additional information:</span> The origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </div> </img> </think> <answer> 0.500,0.406,0.604,0.516</answer> <step-1> <img> <div> <img> <div> <p> <span style=\"color: blue\">Task:</span> Given the input medical image: abdominal computed tomography (CT) scan, return the coordinates of the bounding box of the bladder.</p> <div> <img> <div> <p> <span style=\"color: blue\">Additional information:</span> The origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </div> </img> </think> <answer> 0.500,0.406,0.604,0.516</answer> <step-1> <img> <div> <img> <div> <p> <span style=\"color: blue\">Task:</span> Given the input medical image: abdominal computed tomography (CT) scan, return the coordinates of the bounding box of the bladder.</p> <div> <img> <div> <p> <span style=\"color: blue\">Additional information:</span> The origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </div> </img> </think> <answer> 0.500,0.406,0.604,0.516</answer> <step-1> <img> <div> <img> <div> <p> <span style=\"color: blue\">Task:</span> Given the input medical image: abdominal computed tomography (CT) scan, return the coordinates of the",
+  "medvision_normalized_box_lower_left": [
+    0.5,
+    0.406,
+    0.604,
+    0.516
+  ],
+  "original_pixel_box_upper_left": [
+    300,
+    290,
+    362,
+    356
+  ],
+  "expanded_pixel_box_upper_left": [
+    281,
+    270,
+    381,
+    376
+  ],
+  "image_width": 600,
+  "image_height": 599,
+  "medsam_score": 0.5632748603820801,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Combined\\ROCOv2_2023_train_000680_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Combined\\ROCOv2_2023_train_000680_overlay.png"
+}

@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_003526.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.602,0.375,0.688,0.469</answer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <step-1> <img> <div> <img> <div> <p> I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> <p> I need to identify and output the relative coordinates of the bounding box of the most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> <ul> <li> I see an arrow pointing to a specific region in the image. </li> <li> The relative coordinates of this bounding box: (0.602,0.375), (0.688,0.469). </li> </ul> </div> </img> </think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> Format requirement: The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> tags, respectively. </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> Format requirement: The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> tags, respectively. </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> Format requirement: The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> tags, respectively. </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> Format requirement: The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> tags, respectively. </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> Format requirement: The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> tags, respectively. </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> Format requirement: The reasoning process and the final answer must be enclosed within <think> </think> and <answer> </answer> <footer> <p> </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p> </p> </footer> <think> <answer> 0.602,0.375,0.688,0.469</answer> <footer> <p",
+  "medvision_normalized_box_lower_left": [
+    0.602,
+    0.375,
+    0.688,
+    0.469
+  ],
+  "original_pixel_box_upper_left": [
+    482,
+    436,
+    550,
+    514
+  ],
+  "expanded_pixel_box_upper_left": [
+    462,
+    413,
+    570,
+    537
+  ],
+  "image_width": 800,
+  "image_height": 822,
+  "medsam_score": 0.5417453050613403,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_003526_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_003526_overlay.png"
+}

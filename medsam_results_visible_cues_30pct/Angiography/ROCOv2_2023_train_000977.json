@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000977.png",
+  "modality": "Angiography",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: knee magnetic resonance imaging (MRI) scan. The possible abnormal regions are: tibia, femur, patellar cartilage, patellar cartilage, patellar cartilage, patellar cartilage, patellar cartilage, patellar cartilage, patellar cartilage, patellar cartilage. </step-1> <step-2> The most clinically relevant abnormal region is: patellar cartilage. </step-2> <step-3> The relative coordinates of the bounding box: (0.426, 0.700), (0.542, 0.894). </step-3> </think> <answer> 0.426,0.700,0.542,0.894</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.426,
+    0.7,
+    0.542,
+    0.894
+  ],
+  "original_pixel_box_upper_left": [
+    337,
+    43,
+    429,
+    121
+  ],
+  "expanded_pixel_box_upper_left": [
+    309,
+    20,
+    457,
+    144
+  ],
+  "image_width": 792,
+  "image_height": 402,
+  "medsam_score": 0.48698022961616516,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000977_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000977_overlay.png"
+}

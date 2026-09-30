@@ -1,0 +1,6 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000138.png",
+  "prompt": "the most clinically relevant abnormal region",
+  "raw_output": "Follow the reasoning steps to get the final answer in the required format.",
+  "box": null
+}

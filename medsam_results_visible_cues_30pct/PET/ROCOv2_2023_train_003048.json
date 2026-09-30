@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_003048.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to inspect the image for any visible markings that indicate an abnormal finding. The markings could be arrows, circles, pointers, labels, markers, or text. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> After inspecting the image, I have determined that the relative coordinates of the bounding box of the postcava (inferior vena cava) are (0.604, 0.400), (0.645, 0.457). </step-2> <step-3> The relative coordinates of the bounding box: (0.604, 0.400), (0.645, 0.457). </step-3> </think> <answer> 0.604,0.400,0.645,0.457</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.604,
+    0.4,
+    0.645,
+    0.457
+  ],
+  "original_pixel_box_upper_left": [
+    483,
+    472,
+    516,
+    521
+  ],
+  "expanded_pixel_box_upper_left": [
+    473,
+    457,
+    526,
+    536
+  ],
+  "image_width": 800,
+  "image_height": 869,
+  "medsam_score": 0.4761619567871094,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_003048_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_003048_overlay.png"
+}

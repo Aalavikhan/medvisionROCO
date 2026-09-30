@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000824.png",
+  "modality": "Angiography",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal computed tomography (CT) scan. The reasoning steps are: 1. Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2. Determine the underlying abnormality indicated by the marking rather than the marking itself. 3. Determine the relative coordinates of a bounding box around the underlying abnormality. </step-1> <step-2> After following the reasoning steps, I understand that the most clinically relevant abnormal region is the spleen. </step-2> <step-3> The relative coordinates of the bounding box: (0.198, 0.768), (0.384, 0.850). </step-3> </think> <answer> 0.198,0.768,0.384,0.850</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.198,
+    0.768,
+    0.384,
+    0.85
+  ],
+  "original_pixel_box_upper_left": [
+    71,
+    40,
+    137,
+    61
+  ],
+  "expanded_pixel_box_upper_left": [
+    51,
+    34,
+    157,
+    67
+  ],
+  "image_width": 358,
+  "image_height": 265,
+  "medsam_score": 0.3478104770183563,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000824_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000824_overlay.png"
+}

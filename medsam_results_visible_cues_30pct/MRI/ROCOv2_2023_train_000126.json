@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\MRI\\ROCOv2_2023_train_000126.png",
+  "modality": "MRI",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: kidney contrast computed tomography (CT) scan. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I understand that the task is to return the relative coordinates of the bounding box of the most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I need to identify which relative coordinates are associated with the most clinically relevant abnormal region. </step-2> <step-3> I have identified the relative coordinates of the bounding box of the most clinically relevant abnormal region: (0.247, 0.602), (0.305, 0.680). </step-3> </think> <answer> 0.247,0.602,0.305,0.680</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.247,
+    0.602,
+    0.305,
+    0.68
+  ],
+  "original_pixel_box_upper_left": [
+    78,
+    60,
+    96,
+    74
+  ],
+  "expanded_pixel_box_upper_left": [
+    73,
+    56,
+    101,
+    78
+  ],
+  "image_width": 315,
+  "image_height": 187,
+  "medsam_score": 0.43699216842651367,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000126_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000126_overlay.png"
+}

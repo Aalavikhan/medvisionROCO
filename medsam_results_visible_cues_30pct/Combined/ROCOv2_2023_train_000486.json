@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Combined\\ROCOv2_2023_train_000486.png",
+  "modality": "Combined",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.598, 0.364, 0.716, 0.486</answer> <think> <answer> 0.598, 0.364, 0.716, 0.486</answer> <step-1> <img> <div> <h4>Task:</h4> <p>Given the input medical image: abdominal CT scan, return the coordinates of the bounding box of the liver.</p> <div> <img src=\"https://i.imgur.com/3Q5zr.jpeg\" alt=\"Abdominal CT scan\"></img> </div> <step-1> </step-1> <step-2> <p>Identify the relative coordinates of the bounding box of the liver: (0.604, 0.302), (0.761, 0.471). </p> </step-2> <step-3> <p>Get the reasoning process and the final answer in the required format. </p> <div> <img src=\"https://i.imgur.com/3Q5zr.jpeg\" alt=\"Abdominal CT scan\"></img> </div> <step-3> </step-3> </think> <answer> 0.604, 0.302, 0.761, 0.471</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.598,
+    0.364,
+    0.716,
+    0.486
+  ],
+  "original_pixel_box_upper_left": [
+    448,
+    386,
+    537,
+    477
+  ],
+  "expanded_pixel_box_upper_left": [
+    421,
+    359,
+    564,
+    504
+  ],
+  "image_width": 750,
+  "image_height": 750,
+  "medsam_score": 0.582963764667511,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Combined\\ROCOv2_2023_train_000486_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Combined\\ROCOv2_2023_train_000486_overlay.png"
+}

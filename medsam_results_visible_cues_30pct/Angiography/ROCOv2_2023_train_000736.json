@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000736.png",
+  "modality": "Angiography",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.656,0.326,0.750,0.480</answer> <think> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> </think> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,0.326,0.750,0.480</answer> <step-1> <step-1> <step-2> <step-2> <step-3> <step-3> </step-3> </step-2> </step-1> <answer> 0.656,",
+  "medvision_normalized_box_lower_left": [
+    0.656,
+    0.326,
+    0.75,
+    0.48
+  ],
+  "original_pixel_box_upper_left": [
+    446,
+    218,
+    510,
+    283
+  ],
+  "expanded_pixel_box_upper_left": [
+    427,
+    198,
+    529,
+    302
+  ],
+  "image_width": 680,
+  "image_height": 420,
+  "medsam_score": 0.5264459848403931,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000736_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000736_overlay.png"
+}

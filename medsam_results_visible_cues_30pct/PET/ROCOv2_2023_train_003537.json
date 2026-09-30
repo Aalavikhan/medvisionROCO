@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_003537.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: T2-weighted prostate magnetic resonance imaging (MRI) scan. The potential abnormal regions are: transition zone, transition zone, transition zone, transition zone, transition zone, transition zone, transition zone, transition zone, transition zone, transition zone. </step-1> <step-2> I understand that the relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I also know that the origin of the image space coordinate system is at the lower-left corner of the image. </step-2> <step-3> I now output the relative coordinates of the bounding box of transition zone: (0.526, 0.367), (0.608, 0.441). </step-3> </think> <answer> 0.526,0.367,0.608,0.441</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.526,
+    0.367,
+    0.608,
+    0.441
+  ],
+  "original_pixel_box_upper_left": [
+    316,
+    205,
+    365,
+    232
+  ],
+  "expanded_pixel_box_upper_left": [
+    301,
+    197,
+    380,
+    240
+  ],
+  "image_width": 600,
+  "image_height": 367,
+  "medsam_score": 0.3019896149635315,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_003537_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_003537_overlay.png"
+}

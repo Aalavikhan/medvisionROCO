@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000208.png",
+  "modality": "Angiography",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the relative coordinates of the bounding box of the most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I understand that the relative coordinates of a bounding box must be written as (x, y), where x is the relative position in width and y is the relative position in height. I need to identify the relative coordinates of the bounding box of the most clinically relevant abnormal region. </step-2> <step-3> I have identified the relative coordinates of the bounding box: (0.468, 0.579), (0.521, 0.642). </step-3> </think> <answer> 0.468,0.579,0.521,0.642</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.468,
+    0.579,
+    0.521,
+    0.642
+  ],
+  "original_pixel_box_upper_left": [
+    168,
+    128,
+    187,
+    151
+  ],
+  "expanded_pixel_box_upper_left": [
+    162,
+    121,
+    193,
+    158
+  ],
+  "image_width": 358,
+  "image_height": 358,
+  "medsam_score": 0.469546377658844,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000208_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000208_overlay.png"
+}

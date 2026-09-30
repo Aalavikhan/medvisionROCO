@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_001928.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.500,0.168,0.709,0.286</answer> <think> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</answer> <answer> 0.500,0.168,0.709,0.286</",
+  "medvision_normalized_box_lower_left": [
+    0.5,
+    0.168,
+    0.709,
+    0.286
+  ],
+  "original_pixel_box_upper_left": [
+    330,
+    454,
+    469,
+    529
+  ],
+  "expanded_pixel_box_upper_left": [
+    288,
+    432,
+    511,
+    552
+  ],
+  "image_width": 661,
+  "image_height": 636,
+  "medsam_score": 0.5321560502052307,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_001928_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_001928_overlay.png"
+}

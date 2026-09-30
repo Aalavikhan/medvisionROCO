@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_000793.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.540,0.400,0.721,0.586</answer> <think> <answer> 0.540,0.400,0.721,0.586</answer> <meta-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: T2-weighted head and neck magnetic resonance imaging (MRI) scan. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </meta-reasoning> <think> <answer> 0.540,0.400,0.721,0.586</answer> <meta-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: T2-weighted head and neck magnetic resonance imaging (MRI) scan. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </meta-reasoning> </think> <answer> 0.540,0.400,0.721,0.586</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.54,
+    0.4,
+    0.721,
+    0.586
+  ],
+  "original_pixel_box_upper_left": [
+    412,
+    343,
+    550,
+    497
+  ],
+  "expanded_pixel_box_upper_left": [
+    371,
+    297,
+    591,
+    543
+  ],
+  "image_width": 763,
+  "image_height": 829,
+  "medsam_score": 0.5865606069564819,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_000793_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_000793_overlay.png"
+}

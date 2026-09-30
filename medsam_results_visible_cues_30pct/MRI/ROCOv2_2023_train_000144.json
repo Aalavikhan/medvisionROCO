@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\MRI\\ROCOv2_2023_train_000144.png",
+  "modality": "MRI",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to inspect the image for any visible markings that indicate an abnormal finding. The markings could be arrows, circles, pointers, labels, markers, or text. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> After inspecting the image, I have determined that the relative coordinates of the bounding box of the most clinically relevant abnormal region: (0.456, 0.344), (0.568, 0.400). </step-2> <step-3> I now output the reasoning process and the final answer in the required format. </step-3> </think> <answer> 0.456,0.344,0.568,0.400</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.456,
+    0.344,
+    0.568,
+    0.4
+  ],
+  "original_pixel_box_upper_left": [
+    301,
+    603,
+    375,
+    659
+  ],
+  "expanded_pixel_box_upper_left": [
+    279,
+    586,
+    397,
+    676
+  ],
+  "image_width": 661,
+  "image_height": 1005,
+  "medsam_score": 0.4473523199558258,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000144_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000144_overlay.png"
+}

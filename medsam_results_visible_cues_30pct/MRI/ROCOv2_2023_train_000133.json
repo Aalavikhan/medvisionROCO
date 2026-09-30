@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\MRI\\ROCOv2_2023_train_000133.png",
+  "modality": "MRI",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal computed tomography (CT) scan. The possible abnormal regions are: liver cancer, liver cancer (small), liver cancer (multiple), liver cancer (large), liver cancer (cluster). I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I have determined that the most clinically relevant abnormal region is 'liver cancer (multiple)'. </step-2> <step-3> The relative coordinates of the bounding box: (0.648, 0.295), (0.684, 0.340). </step-3> </think> <answer> 0.648,0.295,0.684,0.340</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.648,
+    0.295,
+    0.684,
+    0.34
+  ],
+  "original_pixel_box_upper_left": [
+    513,
+    583,
+    541,
+    623
+  ],
+  "expanded_pixel_box_upper_left": [
+    505,
+    571,
+    549,
+    635
+  ],
+  "image_width": 791,
+  "image_height": 884,
+  "medsam_score": 0.4855133593082428,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000133_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000133_overlay.png"
+}

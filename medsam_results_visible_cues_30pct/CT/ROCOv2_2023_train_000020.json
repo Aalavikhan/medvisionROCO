@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\CT\\ROCOv2_2023_train_000020.png",
+  "modality": "CT",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.451,0.497,0.617,0.642</answer> <think> <answer> 0.451,0.497,0.617,0.642</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: echocardiographic image. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.451,0.497,0.617,0.642</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: echocardiographic image. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.451,0.497,0.617,0.642</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: echocardiographic image. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.451,0.497,0.617,0.642</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: echocardiographic image. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.451,0.497,0.617,0.642</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: echocardiographic image. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying abnormality indicated by the marking rather than the marking itself. 3) Determine the relative coordinates of a bounding box around the underlying abnormality. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </p> </div> </img> </think> <answer> 0.451,0.497,0.617,0.642</answer> <step-1> <img> <div> <img> <div> <p> I need to identify and output the most clinically relevant abnormal region from the input medical image: echocardiographic image. The reasoning steps are: 1) Inspect the image for arrows, circles, pointers, labels, markers, or other visible markings that indicate an abnormal finding. 2) Determine the underlying",
+  "medvision_normalized_box_lower_left": [
+    0.451,
+    0.497,
+    0.617,
+    0.642
+  ],
+  "original_pixel_box_upper_left": [
+    288,
+    171,
+    394,
+    240
+  ],
+  "expanded_pixel_box_upper_left": [
+    256,
+    150,
+    426,
+    261
+  ],
+  "image_width": 638,
+  "image_height": 478,
+  "medsam_score": 0.5490961074829102,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\CT\\ROCOv2_2023_train_000020_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\CT\\ROCOv2_2023_train_000020_overlay.png"
+}

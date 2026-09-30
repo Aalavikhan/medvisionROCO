@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Ultrasound\\ROCOv2_2023_train_000120.png",
+  "modality": "Ultrasound",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the relative coordinates of the bounding box of most clinically relevant abnormal region. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I understand that the relative coordinates of a bounding box must be written as (x, y), where x is the relative position in width and y is the relative position in height. I need to identify the relative coordinates of the bounding box of most clinically relevant abnormal region. </step-2> <step-3> I have identified the relative coordinates of the bounding box: (0.540, 0.687), (0.659, 0.777). </step-3> </think> <answer> 0.540,0.687,0.659,0.777</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.54,
+    0.687,
+    0.659,
+    0.777
+  ],
+  "original_pixel_box_upper_left": [
+    346,
+    112,
+    422,
+    157
+  ],
+  "expanded_pixel_box_upper_left": [
+    323,
+    98,
+    445,
+    170
+  ],
+  "image_width": 641,
+  "image_height": 503,
+  "medsam_score": 0.5545697212219238,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000120_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Ultrasound\\ROCOv2_2023_train_000120_overlay.png"
+}

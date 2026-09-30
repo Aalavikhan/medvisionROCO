@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\PET\\ROCOv2_2023_train_004312.png",
+  "modality": "PET",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.342, 0.246, 0.656, 0.449</answer> <think> <answer> 0.342, 0.246, 0.656, 0.449</answer> <step-1-reasoning> I need to identify and output the most clinically relevant abnormal region from the input medical image: corticomedullary-phase computed tomography (CT) scan. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1-reasoning> <step-1-answer> The most clinically relevant abnormal region: corticomedullary-phase CT scan. </step-1-answer> <step-2-reasoning> I must now determine the underlying abnormality indicated by the relative coordinates: (0.342, 0.246), (0.656, 0.449). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-2-reasoning> <step-2-answer> The underlying abnormality: kidney tumor. </step-2-answer> <step-3-reasoning> I now need to output the relative coordinates of the bounding box of the kidney tumor, which are: (0.342, 0.246), (0.656, 0.449). The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-3-reasoning> <step-3-answer> The bounding box of the kidney tumor: (0.342, 0.246), (0.656, 0.449). </step-3-answer> </think> <answer> 0.342,0.246,0.656,0.449</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.342,
+    0.246,
+    0.656,
+    0.449
+  ],
+  "original_pixel_box_upper_left": [
+    213,
+    507,
+    408,
+    694
+  ],
+  "expanded_pixel_box_upper_left": [
+    154,
+    451,
+    466,
+    750
+  ],
+  "image_width": 622,
+  "image_height": 921,
+  "medsam_score": 0.5028621554374695,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_004312_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\PET\\ROCOv2_2023_train_004312_overlay.png"
+}

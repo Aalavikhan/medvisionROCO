@@ -1,0 +1,24 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000607.png",
+  "modality": "Angiography",
+  "experiment": "visible_image_cues",
+  "medvision_prompt": "Use visible arrows, circles, pointers, markers, labels, or other embedded visual cues to localize the underlying clinically relevant abnormal region.",
+  "medvision_raw_output": "<think> <step-1-reasoning> I need to identify the clinically relevant abnormality in the image. The abnormality must be a medical condition or finding that requires attention. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1-reasoning> <step-1-answer> The clinically relevant abnormality: edema of brain. </step-1-answer> <step-2-reasoning> Next, I must identify the relative coordinates of the bounding box of the abnormality. The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-2-reasoning> <step-2-answer> The relative coordinates of the bounding box: (0.456, 0.449), (0.721, 0.787). </step-2-answer> </think> <answer> 0.456,0.449,0.721,0.787</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.456,
+    0.449,
+    0.721,
+    0.787
+  ],
+  "pixel_box_upper_left": [
+    344,
+    160,
+    544,
+    414
+  ],
+  "image_width": 754,
+  "image_height": 752,
+  "medsam_score": 0.5665910243988037,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues\\Angiography\\ROCOv2_2023_train_000607_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues\\Angiography\\ROCOv2_2023_train_000607_overlay.png"
+}

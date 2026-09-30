@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\Angiography\\ROCOv2_2023_train_000516.png",
+  "modality": "Angiography",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <answer> 0.161,0.520,0.401,0.809</answer> <think> <answer> 0.161,0.520,0.401,0.809</answer> <answer> 0.302,0.671,0.442,0.786</answer> <answer> 0.401,0.671,0.500,0.756</answer> <answer> 0.442,0.671,0.520,0.786</answer> <answer> 0.500,0.671,0.582,0.756</answer> <answer> 0.520,0.671,0.582,0.756</answer> <answer> 0.582,0.671,0.646,0.756</answer> <answer> 0.646,0.671,0.706,0.756</answer> <answer> 0.706,0.671,0.770,0.756</answer> <answer> 0.770,0.671,0.822,0.756</answer> <answer> 0.822,0.671,0.878,0.756</answer> <answer> 0.878,0.671,0.934,0.756</answer> <answer> 0.934,0.671,0.986,0.756</answer> <answer> 0.986,0.671,0.103,0.756</answer> </think> <answer> 0.161,0.520,0.401,0.809</answer> <answer> 0.302,0.671,0.442,0.786</answer> <answer> 0.401,0.671,0.500,0.756</answer> <answer> 0.442,0.671,0.520,0.756</answer> <answer> 0.500,0.671,0.582,0.756</answer> <answer> 0.520,0.671,0.582,0.756</answer> <answer> 0.582,0.671,0.646,0.756</answer> <answer> 0.646,0.671,0.706,0.756</answer> <answer> 0.706,0.671,0.770,0.756</answer> <answer> 0.770,0.671,0.822,0.756</answer> <answer> 0.822,0.671,0.878,0.756</answer> <answer> 0.878,0.671,0.934,0.756</answer> <answer> 0.934,0.671,0.986,0.756</answer> <answer> 0.986,0.671,0.103,0.756</answer> <answer> 0.161,0.520,0.401,0.809</answer> <answer> 0.302,0.671,0.442,0.786</answer> <answer> 0.401,0.671,0.500,0.756</answer> <answer> 0.442,0.671,0.520,0.756</answer> <answer> 0.500,0.671,0.582,0.7",
+  "medvision_normalized_box_lower_left": [
+    0.161,
+    0.52,
+    0.401,
+    0.809
+  ],
+  "original_pixel_box_upper_left": [
+    121,
+    143,
+    301,
+    360
+  ],
+  "expanded_pixel_box_upper_left": [
+    67,
+    78,
+    355,
+    425
+  ],
+  "image_width": 750,
+  "image_height": 750,
+  "medsam_score": 0.5622818470001221,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000516_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\Angiography\\ROCOv2_2023_train_000516_overlay.png"
+}

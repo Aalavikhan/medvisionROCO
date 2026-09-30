@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\MRI\\ROCOv2_2023_train_000063.png",
+  "modality": "MRI",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to inspect the image for any visible markings that are not part of the image's metadata. The possible markings are: arrows, circles, pointers, labels, markers, text. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-1> <step-2> I have identified that the relative coordinates of the bounding box: (0.568, 0.419), (0.676, 0.556). </step-2> <step-3> The relative coordinates must be written as (x, y), where x is the relative position in width and y is the relative position in height. I understand that the origin of the image space coordinate system is at the lower-left corner of the image. </step-3> </think> <answer> 0.568,0.419,0.676,0.556</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.568,
+    0.419,
+    0.676,
+    0.556
+  ],
+  "original_pixel_box_upper_left": [
+    454,
+    352,
+    541,
+    460
+  ],
+  "expanded_pixel_box_upper_left": [
+    428,
+    320,
+    567,
+    492
+  ],
+  "image_width": 800,
+  "image_height": 792,
+  "medsam_score": 0.5705838799476624,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000063_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\MRI\\ROCOv2_2023_train_000063_overlay.png"
+}

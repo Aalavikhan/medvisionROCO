@@ -1,0 +1,32 @@
+{
+  "image": "D:\\roco-medsam-test\\roco_pilot\\CT\\ROCOv2_2023_train_000039.png",
+  "modality": "CT",
+  "experiment": "visible_cues_with_30_percent_box_expansion",
+  "box_expansion_per_side": 0.3,
+  "medvision_instruction": "Use arrows, circles, pointers, labels, markers, and other visible embedded markings as localization cues, but localize the underlying abnormality rather than the marking.",
+  "segmentation_instruction": "The visible markings are localization cues only. The MedSAM target is the underlying medical abnormality.",
+  "medvision_raw_output": "<think> <step-1> I need to identify and output the most clinically relevant abnormal region from the input medical image: abdominal CT scan. The possible abnormal regions are: aorta, postcava (inferior vena cava), right kidney, left kidney, pancreas, aorta, postcava (inferior vena cava), right kidney, left kidney, pancreas. </step-1> <step-2> The most clinically relevant abnormal region is: postcava (inferior vena cava). </step-2> <step-3> The relative coordinates of the bounding box: (0.434, 0.465), (0.525, 0.501). </step-3> </think> <answer> 0.434,0.465,0.525,0.501</answer>",
+  "medvision_normalized_box_lower_left": [
+    0.434,
+    0.465,
+    0.525,
+    0.501
+  ],
+  "original_pixel_box_upper_left": [
+    389,
+    333,
+    470,
+    357
+  ],
+  "expanded_pixel_box_upper_left": [
+    365,
+    326,
+    494,
+    364
+  ],
+  "image_width": 896,
+  "image_height": 668,
+  "medsam_score": 0.4757799208164215,
+  "mask_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\CT\\ROCOv2_2023_train_000039_mask.png",
+  "overlay_path": "D:\\medvision-roco\\medsam_results_visible_cues_30pct\\CT\\ROCOv2_2023_train_000039_overlay.png"
+}
